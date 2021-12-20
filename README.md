@@ -1,2 +1,2 @@
 # cti-code
-Repository for code for the Course Cyber Threat Intelligence (CTI) at AUAS
+Repository for code for the course Cyber Threat Intelligence (CTI) at AUAS
