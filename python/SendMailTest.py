@@ -16,13 +16,12 @@ SMTP_PASSWORD = 'supersecret'
 FROM_ADDRESS = 'someone@example.com'
 
 
-def SendGmail(toAddress, subject, msg):
+def SendGmail(toAddress, subject, body):
     msg = MIMEMultipart()
     msg['From'] = FROM_ADDRESS
     msg['To'] = toAddress
     msg['Subject'] = subject
 
-    body = 'This is a test sending email through python'
     msg.attach(MIMEText(body, 'plain'))
 
     server = smtplib.SMTP_SSL(SMTP_SERVER, SMTP_SSLPORT)
@@ -34,9 +33,9 @@ def SendGmail(toAddress, subject, msg):
 def main():
     toAddress = 'someone@example.com'
     subject = "Test"
-    msg = "Test\nRegards"
+    body = "This is a test sending email through python\nRegards"
 
-    SendGmail(toAddress, subject, msg)
+    SendGmail(toAddress, subject, body)
     
 
 if __name__ == '__main__':
