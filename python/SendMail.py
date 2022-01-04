@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 '''
-GetDatabaseInfoTest.py: Python script for Wk6 CTI assignment 2 Python output.
+SendMail.py: Python script for Wk6 CTI assignment 2 Python output.
 '''
 
 import smtplib
